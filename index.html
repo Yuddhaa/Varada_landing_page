@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varada Spices</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[var(--clr-background)] text-[var(--clr-text)] font-[var(--font-body)]">
+
+    <!-- ========================= NAVBAR ========================= -->
+
+    <header
+        class="sticky top-0 z-50 border-b border-[var(--navbar-border)] bg-[image:var(--navbar-gradient)] backdrop-blur-[var(--navbar-blur)]">
+
+        <div class="mx-auto flex h-[var(--navbar-height)] max-w-[var(--container)] items-center justify-between px-6">
+
+            <!-- Logo -->
+
+            <a href="#" class="flex items-center gap-4">
+
+                <img src="assets/logo.jpeg" alt="Varada Spices"
+                    class="h-14 w-14 rounded-full border border-white/15 object-cover">
+
+                <div>
+
+                    <h1 class="font-[var(--font-heading)] text-2xl tracking-[0.08em] text-[var(--navbar-text)]">
+                        VARADA SPICES
+                    </h1>
+
+                    <p class="text-sm uppercase tracking-[0.18em] text-white/70">
+                        Premium Whole Spices
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- Desktop Navigation -->
+
+            <nav class="hidden items-center gap-10 md:flex">
+
+                <a href="#about"
+                    class="text-base font-medium tracking-wide text-[var(--navbar-text)] transition hover:text-[var(--navbar-hover)]">
+                    About
+                </a>
+
+                <a href="#products"
+                    class="text-base font-medium tracking-wide text-[var(--navbar-text)] transition hover:text-[var(--navbar-hover)]">
+                    Products
+                </a>
+
+                <a href="#contact"
+                    class="text-base font-medium tracking-wide text-[var(--navbar-text)] transition hover:text-[var(--navbar-hover)]">
+                    Contact
+                </a>
+
+                <a href="#contact"
+                    class="rounded-full bg-[var(--clr-accent)] px-7 py-3 text-base font-semibold text-[var(--clr-primary)] shadow-[var(--shadow-sm)] transition hover:scale-105 hover:shadow-[var(--shadow-card)]">
+                    Get Quote
+                </a>
+
+            </nav>
+
+            <!-- Mobile Hamburger -->
+
+            <button id="menu-btn" class="flex h-12 w-12 items-center justify-center rounded-lg text-white md:hidden">
+
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+
+                </svg>
+
+            </button>
+
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <div id="mobile-menu"
+            class="max-h-0 overflow-hidden border-t border-white/10 bg-[var(--clr-primary)] transition-all duration-300 md:hidden">
+
+            <nav class="flex flex-col px-6 py-6">
+
+                <a href="#about"
+                    class="mobile-link py-3 text-lg text-[var(--navbar-text)] hover:text-[var(--navbar-hover)]">
+                    About
+                </a>
+
+                <a href="#products"
+                    class="mobile-link py-3 text-lg text-[var(--navbar-text)] hover:text-[var(--navbar-hover)]">
+                    Products
+                </a>
+
+                <a href="#contact"
+                    class="mobile-link py-3 text-lg text-[var(--navbar-text)] hover:text-[var(--navbar-hover)]">
+                    Contact
+                </a>
+
+                <a href="#contact"
+                    class="mobile-link mt-5 rounded-full bg-[var(--clr-accent)] px-6 py-4 text-center font-semibold text-[var(--clr-primary)]">
+
+                    Get Quote
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ========================= HERO ========================= -->
+
+
+    <section class="mx-auto grid max-w-[var(--container)] items-center gap-20 px-6 py-12 lg:grid-cols-2">
+
+        <!-- Left Content -->
+
+        <div class="max-w-xl">
+
+            <!-- Eyebrow -->
+
+            <span
+                class="inline-block rounded-full bg-[var(--clr-surface)] px-4 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--clr-secondary)] shadow-[var(--shadow-sm)]">
+
+                VARADA SPICES PVT. LTD.
+
+            </span>
+
+            <!-- Heading -->
+
+            <h2
+                class="mt-8 font-[var(--font-heading)] text-5xl leading-[1.08] tracking-tight text-[var(--clr-primary)] lg:text-6xl">
+
+                Bulk Whole Spices
+
+                <br>
+
+                <span class="text-[var(--clr-secondary)]">
+                    Graded to Your Specifications.
+                </span>
+
+            </h2>
+
+            <!-- Description -->
+
+            <p class="mt-8 text-lg leading-8 text-[var(--clr-text-light)]">
+
+                Varada Spices Pvt. Ltd. manufactures and supplies premium-quality
+                whole spices in bulk to wholesalers, food manufacturers,
+                exporters and retailers. Every order is graded and prepared to
+                match your quality standards, specifications and business
+                requirements.
+
+            </p>
+
+            <!-- Product List -->
+
+            <p class="mt-8 text-base font-medium leading-8 text-[var(--clr-primary)]">
+
+                Black Pepper • White Pepper • Cardamom • Clove • Nutmeg
+
+                <br>
+
+                Mace • Dry Ginger • Cassia • Cinnamon
+
+            </p>
+
+            <!-- Trust Row -->
+
+            <div class="mt-10 flex flex-wrap gap-x-8 gap-y-3">
+
+                <div class="flex items-center gap-2">
+
+                    <span class="text-lg text-[var(--clr-success)]">✓</span>
+
+                    <span class="text-sm font-medium text-[var(--clr-text)]">
+                        Premium Quality
+                    </span>
+
+                </div>
+
+                <div class="flex items-center gap-2">
+
+                    <span class="text-lg text-[var(--clr-success)]">✓</span>
+
+                    <span class="text-sm font-medium text-[var(--clr-text)]">
+                        Multiple Grades
+                    </span>
+
+                </div>
+
+                <div class="flex items-center gap-2">
+
+                    <span class="text-lg text-[var(--clr-success)]">✓</span>
+
+                    <span class="text-sm font-medium text-[var(--clr-text)]">
+                        Bulk Supply
+                    </span>
+
+                </div>
+
+                <div class="flex items-center gap-2">
+
+                    <span class="text-lg text-[var(--clr-success)]">✓</span>
+
+                    <span class="text-sm font-medium text-[var(--clr-text)]">
+                        Reliable Delivery
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="mt-12 flex flex-wrap gap-4">
+
+                <a href="#contact"
+                    class="rounded-full bg-[var(--clr-accent)] px-8 py-4 text-base font-semibold text-[var(--clr-primary)] shadow-[var(--shadow-sm)] transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card)]">
+
+                    Get Quote
+
+                </a>
+
+                <a href="#products"
+                    class="rounded-full border border-[var(--clr-divider)] bg-white px-8 py-4 text-base font-semibold text-[var(--clr-primary)] transition duration-300 hover:border-[var(--clr-secondary)] hover:text-[var(--clr-secondary)]">
+
+                    View Products
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Hero Image -->
+
+        <div class="relative">
+
+            <img src="assets/hero-image.png" alt="Premium whole spices"
+                class="w-full rounded-[var(--radius-xl)] object-cover shadow-[var(--shadow-lg)] aspect-[4/5]">
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= ABOUT ========================= -->
+
+    <section id="about" class="mx-auto max-w-[var(--container)] px-6 py-20">
+
+        <h2 class="font-[var(--font-heading)] text-[var(--text-4xl)]">
+            About Us
+        </h2>
+
+        <p class="mt-6 max-w-3xl leading-relaxed text-[var(--clr-text-light)]">
+
+            Based in Karnataka, Varada Spices Pvt. Ltd. is dedicated
+            to supplying premium whole spices with care and consistency.
+            We believe long-term business relationships are built through
+            transparency, quality and timely deliveries.
+
+        </p>
+
+    </section>
+
+    <!-- ========================= PRODUCTS ========================= -->
+
+    <section id="products" class="mx-auto max-w-[var(--container)] px-6 py-20">
+
+        <h2 class="mb-10 font-[var(--font-heading)] text-[var(--text-4xl)]">
+            Our Products
+        </h2>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Product Card -->
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+
+                <h3 class="font-[var(--font-heading)] text-2xl">
+                    Black Pepper
+                </h3>
+
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">
+                    Premium quality whole black pepper.
+                </p>
+
+            </div>
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+                <h3 class="font-[var(--font-heading)] text-2xl">White Pepper</h3>
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">Premium quality whole white pepper.</p>
+            </div>
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+                <h3 class="font-[var(--font-heading)] text-2xl">Cardamom</h3>
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">Premium quality whole cardamom.</p>
+            </div>
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+                <h3 class="font-[var(--font-heading)] text-2xl">Clove</h3>
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">Premium quality whole clove.</p>
+            </div>
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+                <h3 class="font-[var(--font-heading)] text-2xl">Mace</h3>
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">Premium quality whole mace.</p>
+            </div>
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+                <h3 class="font-[var(--font-heading)] text-2xl">Nutmeg</h3>
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">Premium quality whole nutmeg.</p>
+            </div>
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+                <h3 class="font-[var(--font-heading)] text-2xl">Dry Ginger</h3>
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">Premium quality whole dry ginger.</p>
+            </div>
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+                <h3 class="font-[var(--font-heading)] text-2xl">Cassia</h3>
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">Premium quality whole cassia.</p>
+            </div>
+
+            <div
+                class="rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-card)] transition duration-300 hover:-translate-y-2">
+                <h3 class="font-[var(--font-heading)] text-2xl">Cinnamon</h3>
+                <p class="mt-2 text-sm text-[var(--clr-text-light)]">Premium quality whole cinnamon.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= CONTACT ========================= -->
+
+    <section id="contact" class="mt-10 border-t border-[var(--clr-border)] bg-white py-20">
+
+        <div class="mx-auto max-w-[var(--container)] px-6">
+
+            <h2 class="font-[var(--font-heading)] text-[var(--text-4xl)]">
+                Let's Connect
+            </h2>
+
+            <p class="mt-8">Email : info@varadaspices.com</p>
+
+            <p>Phone : +91 XXXXX XXXXX</p>
+
+            <p>Karnataka, India</p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= FOOTER ========================= -->
+
+    <footer class="py-8 text-center text-sm text-[var(--clr-text-light)]">
+
+        © 2026 Varada Spices Pvt. Ltd.
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+/* ==========================================================
+   VARADA SPICES DESIGN SYSTEM
+   ----------------------------------------------------------
+   Version : 1.1
+   Purpose : Centralized design tokens for the entire website.
+   ========================================================== */
+
+:root {
+
+    /* ======================================================
+       BRAND COLORS
+       ====================================================== */
+
+    /* Primary Brand */
+    --clr-primary: #2B1D0E;
+
+    /* Secondary Brand */
+    --clr-secondary: #8C4A1A;
+
+    /* Accent */
+    --clr-accent: #C8A26B;
+
+    /* Natural Green */
+    --clr-success: #2F4F3A;
+
+
+    /* ======================================================
+       UI COLORS
+       ====================================================== */
+
+    --clr-background: #F5F1EB;
+
+    --clr-surface: #FFFFFF;
+
+    --clr-surface-alt: #FCF8F4;
+
+    --clr-border: #E5DED5;
+
+    --clr-divider: #D7CDC2;
+
+    --clr-text: #2B1D0E;
+
+    --clr-text-light: #6D645B;
+
+    --clr-text-muted: #93897D;
+
+    --clr-white: #FFFFFF;
+
+
+    /* ======================================================
+       NAVIGATION
+       ====================================================== */
+
+    --navbar-bg: var(--clr-primary);
+
+    --navbar-text: var(--clr-background);
+
+    --navbar-hover: var(--clr-accent);
+
+    --navbar-border: rgba(255, 255, 255, 0.08);
+
+    --navbar-gradient:
+        linear-gradient(180deg,
+            #382514 0%,
+            #2B1D0E 100%);
+
+    --navbar-blur: 14px;
+
+
+    /* ======================================================
+       TYPOGRAPHY
+       ====================================================== */
+
+    --font-heading:
+        "Minion Variable Concept Display",
+        "Cinzel",
+        Georgia,
+        serif;
+
+    --font-body:
+        "Montserrat",
+        "Inter",
+        system-ui,
+        sans-serif;
+
+
+    /* ======================================================
+       FONT SIZES
+       ====================================================== */
+
+    --text-xs: 0.75rem;
+
+    --text-sm: 0.875rem;
+
+    --text-base: 1rem;
+
+    --text-md: 1.125rem;
+
+    --text-lg: 1.25rem;
+
+    --text-xl: 1.5rem;
+
+    --text-2xl: 2rem;
+
+    --text-3xl: 2.5rem;
+
+    --text-4xl: 3rem;
+
+    --text-5xl: 3.75rem;
+
+    --text-6xl: 4.75rem;
+
+
+    /* ======================================================
+       FONT WEIGHTS
+       ====================================================== */
+
+    --fw-light: 300;
+
+    --fw-regular: 400;
+
+    --fw-medium: 500;
+
+    --fw-semibold: 600;
+
+    --fw-bold: 700;
+
+
+    /* ======================================================
+       LINE HEIGHT
+       ====================================================== */
+
+    --leading-tight: 1.1;
+
+    --leading-normal: 1.6;
+
+    --leading-loose: 1.8;
+
+
+    /* ======================================================
+       LETTER SPACING
+       ====================================================== */
+
+    --tracking-tight: -0.02em;
+
+    --tracking-normal: 0;
+
+    --tracking-wide: 0.08em;
+
+    --tracking-heading: 0.02em;
+
+
+    /* ======================================================
+       SPACING SCALE
+       ====================================================== */
+
+    --space-1: 4px;
+
+    --space-2: 8px;
+
+    --space-3: 12px;
+
+    --space-4: 16px;
+
+    --space-5: 20px;
+
+    --space-6: 24px;
+
+    --space-8: 32px;
+
+    --space-10: 40px;
+
+    --space-12: 48px;
+
+    --space-16: 64px;
+
+    --space-20: 80px;
+
+    --space-24: 96px;
+
+    --space-32: 128px;
+
+
+    /* ======================================================
+       BORDER RADIUS
+       ====================================================== */
+
+    --radius-sm: 6px;
+
+    --radius-md: 12px;
+
+    --radius-lg: 18px;
+
+    --radius-xl: 28px;
+
+    --radius-full: 999px;
+
+
+    /* ======================================================
+       SHADOWS
+       ====================================================== */
+
+    --shadow-sm:
+        0 2px 6px rgba(43, 29, 14, 0.06);
+
+    --shadow-card:
+        0 10px 30px rgba(43, 29, 14, 0.08);
+
+    --shadow-lg:
+        0 20px 50px rgba(43, 29, 14, 0.12);
+
+
+    /* ======================================================
+       LAYOUT
+       ====================================================== */
+
+    --container: 1200px;
+
+    --section-width: 1280px;
+
+    --navbar-height: 88px;
+
+
+    /* ======================================================
+       TRANSITIONS
+       ====================================================== */
+
+    --transition-fast: 150ms ease;
+
+    --transition: 250ms ease;
+
+    --transition-slow: 450ms ease;
+
+}
